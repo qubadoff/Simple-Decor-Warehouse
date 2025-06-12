@@ -11,10 +11,7 @@ class DecorProductPivot extends Model
 
     public $incrementing = true;
 
-    protected $fillable = [
-        'decor_id',
-        'product_id',
-    ];
+    protected $guarded = ['id'];
 
     public function decor(): BelongsTo
     {
